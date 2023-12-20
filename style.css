@@ -227,7 +227,7 @@ a {
 .carregando-projeto {
   display: flex;
   margin: auto;
-  margin-top: -14vh;
+  margin-top: -13vh;
   width: 25px;
   height: 25px;
   background-color: transparent;
@@ -431,7 +431,7 @@ footer {
 
 /* Mobile */
 
-@media screen and (max-width: 451px) {
+@media screen and (max-width: 485px) {
   .home-Geral {
     display: inline-block;
   }
@@ -474,7 +474,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 449px) {
   .home-Geral {
     display: inline-block;
   }
