@@ -429,4 +429,60 @@ footer {
   }
 }
 
+/* Mobile */
 
+@media screen and (max-width: 376px) {
+  .home-Geral {
+    display: inline-block;
+  }
+
+  .home-imagem img {
+    width: 320px;
+    margin-left: 5px;
+  }
+
+  .home {
+    font-size: 35px;
+    margin: -8px;
+  }
+
+  .home-cor {
+    font-size: 18px;
+  }
+
+  .contato a {
+    font-size: 63px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  .sobre {
+    display: block;
+  }
+
+  .sobre img {
+    display: block;
+    padding-right: 3vh;
+    width: 320px;
+    height: 210px;
+  }
+
+  .tecnologias-caixa:hover {
+    transform: scale(0.9);
+  }
+
+  h1 {
+    margin: 25px;
+  }
+
+  h1:hover {
+    transform: scale(1.1);
+  }
+
+  .btn {
+    display: flex;
+    margin: 1px 282px;
+  }
+}
