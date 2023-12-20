@@ -431,6 +431,49 @@ footer {
 
 /* Mobile */
 
+@media screen and (max-width: 451px) {
+  .home-Geral {
+    display: inline-block;
+  }
+
+  .home-imagem img {
+    width: 320px;
+    margin-left: 5px;
+  }
+
+  .home {
+    font-size: 75px;
+  }
+
+  .home-cor {
+    font-size: 25px;
+  }
+
+  .contato a {
+    font-size: 87px;
+  }
+
+  a {
+    font-size: 15px;
+  }
+
+  .sobre {
+    display: block;
+  }
+
+  .sobre img {
+    display: block;
+    padding-right: 3vh;
+    width: 350px;
+    height: 220px;
+  }
+
+  .btn {
+    display: flex;
+    margin: 1px 348px;
+  }
+}
+
 @media screen and (max-width: 376px) {
   .home-Geral {
     display: inline-block;
