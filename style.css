@@ -517,7 +517,8 @@ footer {
   }
 
   .sobretexto {
-    text-align: center;
+    font-size: 13px;
+    text-align: justify;
   }
 
   .tecnologias-caixa:hover {
@@ -544,3 +545,4 @@ footer {
     scroll-behavior: smooth;
   }
 }
+
