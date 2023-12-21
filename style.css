@@ -468,6 +468,10 @@ footer {
     height: 220px;
   }
 
+  .sobretexto {
+    text-align: center;
+  }
+
   .btn {
     display: flex;
     margin: 1px 348px;
@@ -512,6 +516,10 @@ footer {
     height: 210px;
   }
 
+  .sobretexto {
+    text-align: center;
+  }
+
   .tecnologias-caixa:hover {
     transform: scale(0.9);
   }
@@ -533,5 +541,6 @@ footer {
   .scroll {
     display: block;
     padding: 1px;
+    scroll-behavior: smooth;
   }
 }
