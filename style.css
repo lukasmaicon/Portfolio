@@ -386,7 +386,7 @@ footer {
   }
 
   .projetosdiv {
-    display: block;
+    display: none;
     margin: 2rem 4rem;
   }
 
@@ -415,7 +415,7 @@ footer {
   }
 
   .projetosdiv {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
   }
@@ -468,7 +468,8 @@ footer {
   }
 
   .sobretexto {
-    text-align: center;
+    text-align: justify;
+    font-size: 22px;
   }
 
   .btn {
@@ -571,4 +572,80 @@ footer {
     display: flex;
     margin: 1px 282px;
   }
+
+@media screen and (max-width: 375px) {
+  .home {
+    font-size: 30px;
+    margin: -8px;
+  }
+
+  .home-cor {
+    font-size: 18px;
+  }
+
+  .contato a {
+    font-size: 63px;
+  }
+
+  a {
+    font-size: 10px;
+  }
+
+  .home-imagem img {
+    width: 240px;
+    margin-left: 15px;
+  }
+
+  .sobre img {
+    display: block;
+    padding-right: 3vh;
+    width: 250px;
+    height: 160px;
+  }
+
+  .sobretexto {
+    font-size: 11px;
+  }
+
+  .btn {
+    display: flex;
+    margin: 1px 243px;
+    padding: 10px;
+  }
+
+  .projetos-caixa {
+    height: 220px;
+    width: 199px;
+  }
+
+  .tecnologias-caixa {
+    height: 220px;
+    width: 199px;
+  }
+
+  .projetos-caixa img {
+    height: 150px;
+    width: 195px;
+  }
+
+  .projetoscaixa2 {
+    height: 220px;
+    width: 199px;
+  }
+
+  .projetosdiv img {
+    height: 130px;
+    width: 193px;
+  }
+
+  .proj1 {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 8px;
+  }
+
+  footer p {
+    width: 245px;
+  }
+}
 }
