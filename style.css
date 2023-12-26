@@ -640,12 +640,20 @@ footer {
 
   .proj1 {
     font-size: 13px;
-    margin-top: 20px;
+    margin-top: 8px;
     margin-left: 8px;
   }
 
+  .carregando-projeto {
+    margin-top: -125px;
+  }
+
+  .button {
+    font-size: 11px;
+  }
+
   footer p {
-    width: 245px;
+    font-size: 11px;
   }
 }
 }
