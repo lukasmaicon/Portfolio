@@ -333,6 +333,17 @@ footer {
   height: 50px;
 }
 
+@media screen and (max-width: 1331px) {
+  .proj1 {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+  .carregando-projeto {
+    margin-top: -105px;
+  }
+}
+
 @media screen and (max-width: 1120px) {
   .home-Geral {
     display: block;
@@ -573,91 +584,91 @@ footer {
     margin: 1px 282px;
   }
 
-@media screen and (max-width: 375px) {
-  .menu {
-    height: 40px;
-  }
+  @media screen and (max-width: 375px) {
+    .menu {
+      height: 40px;
+    }
 
-  .home {
-    font-size: 30px;
-    margin: -8px;
-  }
+    .home {
+      font-size: 30px;
+      margin: -8px;
+    }
 
-  .home-cor {
-    font-size: 18px;
-  }
+    .home-cor {
+      font-size: 18px;
+    }
 
-  .contato a {
-    font-size: 63px;
-  }
+    .contato a {
+      font-size: 63px;
+    }
 
-  a {
-    font-size: 10px;
-  }
+    a {
+      font-size: 10px;
+    }
 
-  .home-imagem img {
-    width: 240px;
-    margin-left: 15px;
-  }
+    .home-imagem img {
+      width: 240px;
+      margin-left: 15px;
+    }
 
-  .sobre img {
-    display: block;
-    padding-right: 3vh;
-    width: 250px;
-    height: 160px;
-  }
+    .sobre img {
+      display: block;
+      padding-right: 3vh;
+      width: 250px;
+      height: 160px;
+    }
 
-  .sobretexto {
-    font-size: 11px;
-  }
+    .sobretexto {
+      font-size: 11px;
+    }
 
-  .btn {
-    display: flex;
-    margin: -29px 243px;
-    padding: 10px;
-  }
+    .btn {
+      display: flex;
+      margin: -29px 243px;
+      padding: 10px;
+    }
 
-  .projetos-caixa {
-    height: 220px;
-    width: 199px;
-  }
+    .projetos-caixa {
+      height: 220px;
+      width: 199px;
+    }
 
-  .tecnologias-caixa {
-    height: 220px;
-    width: 199px;
-  }
+    .tecnologias-caixa {
+      height: 220px;
+      width: 199px;
+    }
 
-  .projetos-caixa img {
-    height: 150px;
-    width: 195px;
-  }
+    .projetos-caixa img {
+      height: 150px;
+      width: 195px;
+    }
 
-  .projetoscaixa2 {
-    height: 220px;
-    width: 199px;
-  }
+    .projetoscaixa2 {
+      height: 220px;
+      width: 199px;
+    }
 
-  .projetosdiv img {
-    height: 130px;
-    width: 193px;
-  }
+    .projetosdiv img {
+      height: 130px;
+      width: 193px;
+    }
 
-  .proj1 {
-    font-size: 13px;
-    margin-top: 8px;
-    margin-left: 8px;
-  }
+    .proj1 {
+      font-size: 13px;
+      margin-top: 8px;
+      margin-left: 8px;
+    }
 
-  .carregando-projeto {
-    margin-top: -100px;
-  }
+    .carregando-projeto {
+      margin-top: -100px;
+    }
 
-  .button {
-    font-size: 11px;
-  }
+    .button {
+      font-size: 11px;
+    }
 
-  footer p {
-    font-size: 11px;
+    footer p {
+      font-size: 11px;
+    }
   }
-}
 }
