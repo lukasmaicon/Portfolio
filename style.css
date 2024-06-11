@@ -1,0 +1,789 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    outline: none;
+  }
+  
+  :root {
+    --cor1: #101111;
+    --cor2: #ffffff;
+    --cor3: #696969a8;
+    --cor4: #1971b3;
+  }
+  
+  body {
+    height: 140%;
+  }
+
+  .enabled {
+    padding-bottom: 15vh;
+  }
+
+  .marge {
+    border-right: solid 8px var(--cor1);
+    border-left: solid 8px var(--cor1);
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--cor1);
+    z-index: 5;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  li {
+    padding: 3px;
+  }
+  
+  a {
+    color: var(--cor2);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .home {
+    color: var(--cor4);
+    font-size: 75px;
+    font-weight: bold;
+    padding-bottom: 100px;
+    padding-left: 10%;
+  }
+  
+  .home-cor {
+    display: inline-flex;
+    color: var(--cor3);
+    font-size: 37px;
+  }
+  
+  .home-Geral {
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-imagem {
+    position: relative;
+    padding-left: 12vh;
+  }
+  
+  .contato a {
+    font-size: 80px;
+    color: var(--cor1);
+    transition: 1.1s;
+  }
+  
+  .contato a:hover {
+    color: var(--cor4);
+  }
+  
+  .sobre {
+    display: inline-flex;
+  }
+  
+  .sobre img {
+    margin: auto;
+    width: 400px;
+    height: 280px;
+    padding-left: 25px;
+  }
+  
+  .sobretexto {
+    margin-top: px;
+    line-height: 25px;
+    color: var(--cor3);
+    text-align: justify;
+    font-size: 25px;
+    padding: 60px;
+  }
+  
+  .container.active {
+    background: #0f0f0fea;
+  }
+  
+  .btn {
+    display: inline-flex;
+    margin-left: 172vh;
+    top: 40px;
+    width: 34px;
+    height: 18px;
+    background-color: var(--cor2);
+    border-radius: 60px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 6;
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: var(--cor1);
+    border-radius: 50%;
+    top: 50%;
+    left: 1px;
+    transform: translateY(-50%);
+    transition: left 0.8s;
+  }
+  
+  .btn.active:before {
+    left: 17px;
+  }
+  
+  .tecnologias-main {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .tecnologias-main img {
+    height: 90px;
+    width: 60px;
+    padding-top: 5px;
+  }
+
+  .js img {
+    height: 103px;
+    width: 85px;
+    position: relative;
+    top: -7px;
+  }
+  
+  .tecnologias-div {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+    text-align: center;
+  }
+  
+  .tecnologias-div img {
+    height: 94px;
+    width: 95px;
+  }
+  
+  .tecnologias-caixa {
+    height: 275px;
+    width: 300px;
+    border: 2px solid var(--cor1);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px var(--cor1);
+  }
+  
+  .tecnologias-caixa:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .projetos-caixa {
+    margin-top: 20px;
+    height: 275px;
+    width: 300px;
+    border: 2px solid var(--cor1);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px var(--cor1);
+  }
+  
+  .projetos {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+    top: 10px;
+  }
+  
+  .projetos img {
+    height: 160px;
+    width: 280px;
+    margin-top: 25px;
+  }
+  
+  .projetosdiv {
+    display: none;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+    top: 80px;
+  }
+  
+  .projetosdiv img {
+    height: 170px;
+    width: 280px;
+    margin-top: 25px;
+  }
+  
+  .projetoscaixa2 {
+    height: 275px;
+    width: 300px;
+    border: 2px solid var(--cor1);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px var(--cor1);
+  }
+  
+  .carregando-projeto {
+    display: flex;
+    margin: auto;
+    margin-top: -13vh;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid var(--cor4);
+    border-top: 4px solid transparent;
+    animation: carregando 1s linear infinite;
+  }
+  
+  @keyframes carregando {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .button {
+    display: block;
+    border: none;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10vh;
+    background-color: var(--cor4);
+    color: var(--cor2);
+    height: 33px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  h1 {
+    position: absolute;
+    margin: auto;
+    margin-top: 10px;
+    padding: 65px;
+    place-items: center;
+    height: 10vh;
+    transition: all 0.8s;
+    color: var(--cor3);
+  }
+  
+  h1:hover {
+    filter: drop-shadow(2px 3px 1px rgba(0, 0, 0, 0.5));
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  h2 {
+    color: var(--cor3);
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  h3 {
+    color: var(--cor3);
+    font-size: 18px;
+    padding-top: 25px;
+    font-weight: bold;
+  }
+  
+  .scroll {
+    text-decoration: none;
+    color: var(--cor2);
+    background-color: var(--cor1);
+    border-radius: 5px;
+    padding: 5px;
+    position: fixed;
+    right: 25px;
+    bottom: 10px;
+  }
+  
+  section {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 19vh;
+  }
+  
+  .activ {
+    background-color: var(--cor4);
+    border-radius: 4px;
+  }
+  
+  .mystyle {
+    color: var(--cor2);
+    transition: all 0.4s;
+  }
+  
+  .mystyle:hover {
+    color: var(--cor4);
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    padding: 13px;
+    padding-top: 15px;
+    text-align: center;
+    margin-top: 25vh;
+    height: 50px;
+  }
+  
+  @media screen and (max-width: 1439px) {
+    .btn {
+      display: flex;
+      margin: 1px 408px;
+    }
+  }
+
+  @media screen and (max-width: 1331px) {
+    .proj1 {
+      font-size: 25px;
+      margin-left: 20px;
+    }
+  
+    .carregando-projeto {
+      margin-top: -105px;
+    }
+  }
+  
+  @media screen and (max-width: 1227px) {
+    .home-Geral {
+      display: block;
+    }
+  
+    .home-imagem {
+      padding: 0%;
+    }
+  }
+  
+  @media screen and (max-width: 1119px) {
+    .home-imagem {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 988px) {
+    .tecnologias-main {
+      display: block;
+      margin: -1rem 5rem;
+    }
+  
+    .tecnologias-caixa {
+      margin-bottom: 24px;
+    }
+  
+    .tecnologias-div {
+      display: block;
+      margin: -1rem 5rem;
+    }
+  
+    .projetos {
+      display: block;
+      margin: 2rem 4rem;
+    }
+  
+    .projetos-caixa {
+      margin-bottom: 24px;
+    }
+  
+    .projetosdiv {
+      display: none;
+      margin: 2rem 4rem;
+    }
+  
+    .projetoscaixa2 {
+      margin-bottom: 44px;
+    }
+  }
+
+  @media screen and (max-width: 987px) {
+    .tecnologias-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tecnologias-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projetos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projetosdiv {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media screen and (max-width: 968px) {
+    .sobre {
+      display: block;
+    }
+  
+    .sobre img {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 730px) {
+    .home p {
+      font-size: 60px;
+    }
+
+  }
+
+  @media screen and (max-width: 603px) {
+    .home p {
+      font-size: 40px;
+    }
+
+    .home-cor {
+      font-size: 25px;
+      font-weight: bolder;
+    }
+
+    .home p {
+      font-weight: bolder;
+    }
+    
+  }
+
+  /* Mobile */
+  
+  @media screen and (max-width: 485px) {
+    .home-Geral {
+      display: inline-block;
+      margin-top: 1px;
+    }
+  
+    .home-imagem img {
+      width: 320px;
+      margin-left: 5px;
+    }
+  
+    .home p {
+      font-size: 35px;
+      font-weight: bolder;
+    }
+  
+    .home-cor {
+      font-size: 28px;
+      font-weight: bolder;
+      padding-left: 18px;
+    }
+  
+    .contato a {
+      font-size: 35px;
+      padding-left: 18px;
+    }
+  
+    a {
+      font-size: 16px;
+    }
+  
+    .sobre {
+      display: block;
+    }
+  
+    .sobre img {
+      display: block;
+      padding-right: 3vh;
+      width: 350px;
+      height: 220px;
+    }
+  
+    .sobretexto {
+      text-align: justify;
+      font-size: 22px;
+    }
+  
+    .btn {
+      display: flex;
+      margin: 1px 348px;
+    }
+  }
+  
+  @media screen and (max-width: 449px) {
+    .home-Geral {
+      display: inline-block;
+      margin-top: 1px;
+    }
+  
+    .home-imagem img {
+      width: 320px;
+      margin-left: 35px;
+    }
+
+    .home p {
+      padding-left: 15px;
+      font-weight: bolder;
+    }
+  
+    .home {
+      font-size: 38px;
+      margin: -8px;
+    }
+  
+    .home-cor {
+      font-size: 20px;
+      font-weight: bolder;
+    }
+  
+    .contato a {
+      font-size: 50px;
+    }
+  
+    a {
+      font-size: 12px;
+    }
+  
+    .sobre {
+      display: block;
+    }
+  
+    .sobre img {
+      display: block;
+      padding-right: 3vh;
+      width: 320px;
+      height: 210px;
+    }
+  
+    .sobretexto {
+      font-size: 13px;
+      text-align: justify;
+    }
+  
+    .tecnologias-caixa {
+      height: 260px;
+      width: 240px;
+    }
+  
+    .tec1 {
+      font-size: 14px;
+    }
+  
+    .projetos-caixa {
+      height: 260px;
+      width: 240px;
+    }
+  
+    .projetosdiv img {
+      height: 160px;
+      width: 230px;
+    }
+  
+    .proj1 {
+      font-size: 14px;
+    }
+  
+    .projetoscaixa2 {
+      height: 260px;
+      width: 240px;
+    }
+  
+    .projetos-caixa img {
+      height: 160px;
+      width: 230px;
+    }
+  
+    .tecnologias-caixa:hover {
+      transform: scale(1.1);
+    }
+  
+    h1 {
+      margin: 25px;
+      padding-top: 50px;
+      font-size: 14px;
+    }
+  
+    h1:hover {
+      transform: scale(1.1);
+    }
+  
+    .btn {
+      display: flex;
+      margin: 1px 292px;
+    }
+
+  @media screen and (max-width: 391px) {
+    .home-imagem {
+      margin: -16px;
+    }
+
+    .home-Geral {
+      display: inline-block;
+      margin-top: 1px;
+    }
+
+    .home p {
+      font-size: 33px;
+      font-weight: bolder;
+    }
+
+    .home-cor {
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+    .contato a {
+      font-size: 35;
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    .menu {
+      height: 40px;
+    }
+
+    .home {
+      font-size: 30px;
+      margin: -8px;
+    }
+
+    .home p {
+      padding-left: 35px;
+      font-size: 25px;
+    }
+
+    .home-imagem {
+      padding-left: 45px;
+    }
+
+    .home-cor {
+      font-size: 15px;
+      padding-left: 35px;
+    }
+
+    .home-Geral {
+      display: inline-block;
+      margin-top: 1px;
+    }
+
+    .contato a {
+      font-size: 38px;
+      padding-left: 35px;
+    }
+
+    a {
+      font-size: 10px;
+    }
+
+    .home-imagem img {
+      width: 240px;
+      margin-left: 15px;
+    }
+
+    .sobre img {
+      display: block;
+      padding-right: 3vh;
+      width: 250px;
+      height: 160px;
+    }
+
+    .sobretexto {
+      font-size: 11px;
+    }
+
+    .btn {
+      display: flex;
+      margin: -29px 253px;
+      padding: 10px;
+    }
+
+    .projetos-caixa {
+      height: 220px;
+      width: 199px;
+    }
+
+    .tecnologias-caixa {
+      height: 220px;
+      width: 199px;
+    }
+
+    .projetos-caixa img {
+      height: 150px;
+      width: 195px;
+    }
+
+    .projetoscaixa2 {
+      height: 220px;
+      width: 199px;
+    }
+
+    .projetosdiv img {
+      height: 130px;
+      width: 193px;
+    }
+
+    .proj1 {
+      font-size: 13px;
+      margin-top: 8px;
+      margin-left: 8px;
+    }
+
+    .carregando-projeto {
+      margin-top: -100px;
+    }
+
+    .button {
+      font-size: 11px;
+    }
+
+    footer p {
+      font-size: 11px;
+    }
+
+  @media screen and (max-width: 367px) {
+    .home p {
+      font-size: 26px;
+      padding-left: 25px;
+    }
+
+    .home-Geral {
+      display: inline-block;
+      margin-top: 1px;
+    }
+
+    .home-cor {
+      font-size: 15px;
+      font-weight: bolder;
+      margin-left: -10px;
+    }
+
+    .contato a {
+      font-size: 39px;
+      font-weight: bolder;
+      margin-left: -10px;
+    }
+
+    .home-imagem {
+      padding-left: 40px;
+    }
+  }
+  }
+  }
+  
